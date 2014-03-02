@@ -45,8 +45,7 @@ Check out [the demo](http://magnigenie.com/wp-responsive-menu-mobile-menu-plugin
 
 == Screenshots ==
 
-1. Check out [the demo]http://magnigenie.com/wp-responsive-menu-mobile-menu-plugin-for-wordpress/ for more screenshots and demo .
-
+1. Check out [the demo](http://magnigenie.com/wp-responsive-menu-mobile-menu-plugin-wordpress/)
 == ChangeLog ==
 
 = Version 1.0 =
