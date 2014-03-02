@@ -33,7 +33,7 @@ This plugin is based on  [sidr jquery menu plugin](https://github.com/artberri/s
 
 If you have any  suggestions for a new plugin, feel free to email me at sagarseth9@gmail.com.
 
-Check out [the demo]http://magnigenie.com/wp-responsive-menu-mobile-menu-plugin-for-wordpress/
+Check out [the demo](http://magnigenie.com/wp-responsive-menu-mobile-menu-plugin-wordpress/)
 
 == Installation ==
 
