@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: WP Responsive Menu
-Plugin URI: http://magnigeeks.com/wp-responsive-menu
+Plugin URI: http://magnigenie.com/wp-responsive-menu-mobile-menu-plugin-wordpress/
 Description: WP Responsive Menu adds a cool sliding responsive menu to your site.
 Version: 1.0
 Author: Nirmal Ram
