@@ -2,7 +2,7 @@
 Contributors: sagarseth9
 Tags: Responsive Menu, Mobile Menu, Responsive Menu Plugin, WP Responsive Menu, Wordpress mobile menu
 Requires at least: 3.0
-Tested up to: 3.8.1
+Tested up to: 3.9
 Stable tag: 1.0
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=sagar.seth9@gmail.com&item_name=WP%20Responsive%20Menu&return=http://magnigenie.com
 License: GPLv2 or later
