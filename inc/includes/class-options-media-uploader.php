@@ -1,13 +1,13 @@
 <?php
 /**
- * @package   Options_Framework
+ * @package   Wpr_Options_Framework
  * @author    Devin Price <devin@wptheming.com>
  * @license   GPL-2.0+
  * @link      http://wptheming.com
  * @copyright 2010-2014 WP Theming
  */
 
-class Options_Framework_Media_Uploader {
+class Wpr_Options_Framework_Media_Uploader {
 
 	/**
 	 * Initialize the media uploader class
@@ -105,7 +105,7 @@ class Options_Framework_Media_Uploader {
 	 */
 	function wpr_optionsframework_media_scripts( $hook ) {
 
-		$menu = Options_Framework_Admin::menu_settings();
+		$menu = Wpr_Options_Framework_Admin::menu_settings();
 
         if ( substr( $hook, -strlen( $menu['menu_slug'] ) ) !== $menu['menu_slug'] )
 	        return;
@@ -113,7 +113,7 @@ class Options_Framework_Media_Uploader {
 		if ( function_exists( 'wp_enqueue_media' ) )
 			wp_enqueue_media();
 
-		wp_register_script( 'of-media-uploader', WPR_OPTIONS_FRAMEWORK_DIRECTORY .'js/media-uploader.js', array( 'jquery' ), Options_Framework::VERSION );
+		wp_register_script( 'of-media-uploader', WPR_OPTIONS_FRAMEWORK_DIRECTORY .'js/media-uploader.js', array( 'jquery' ), Wpr_Options_Framework::VERSION );
 		wp_enqueue_script( 'of-media-uploader' );
 		wp_localize_script( 'of-media-uploader', 'wpr_optionsframework_l10n', array(
 			'upload' => __( 'Upload', 'textdomain' ),

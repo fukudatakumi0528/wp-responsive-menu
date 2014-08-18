@@ -1,13 +1,13 @@
 <?php
 /**
- * @package   Options_Framework
+ * @package   Wpr_Options_Framework
  * @author    Devin Price <devin@wptheming.com>
  * @license   GPL-2.0+
  * @link      http://wptheming.com
  * @copyright 2010-2014 WP Theming
  */
 
-class Options_Framework {
+class Wpr_Options_Framework {
 
 	/**
 	 * Plugin version, used for cache-busting of style and script file references.

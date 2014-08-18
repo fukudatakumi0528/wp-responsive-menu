@@ -1,13 +1,13 @@
 <?php
 /**
- * @package   Options_Framework
+ * @package   Wpr_Options_Framework
  * @author    Devin Price <devin@wptheming.com>
  * @license   GPL-2.0+
  * @link      http://wptheming.com
  * @copyright 2010-2014 WP Theming
  */
 
-class Options_Framework_Admin {
+class Wpr_Options_Framework_Admin {
 
 	/**
      * Page hook for the options screen
@@ -25,7 +25,7 @@ class Options_Framework_Admin {
     public function init() {
 
 		// Gets options to load
-    	$options = & Options_Framework::_wpr_optionsframework_options();
+    	$options = & Wpr_Options_Framework::_wpr_optionsframework_options();
 
 		// Checks if options are available
     	if ( $options ) {
@@ -151,7 +151,7 @@ class Options_Framework_Admin {
 		if ( $this->options_screen != $hook )
 	        return;
 
-		wp_enqueue_style( 'wpr_optionsframework', WPR_OPTIONS_FRAMEWORK_DIRECTORY . 'css/wpr_optionsframework.css', array(),  Options_Framework::VERSION );
+		wp_enqueue_style( 'wpr_optionsframework', WPR_OPTIONS_FRAMEWORK_DIRECTORY . 'css/wpr_optionsframework.css', array(),  Wpr_Options_Framework::VERSION );
 		wp_enqueue_style( 'wp-color-picker' );
 	}
 
@@ -166,7 +166,7 @@ class Options_Framework_Admin {
 	        return;
 
 		// Enqueue custom option panel JS
-		wp_enqueue_script( 'options-custom', WPR_OPTIONS_FRAMEWORK_DIRECTORY . 'js/options-custom.js', array( 'jquery','wp-color-picker' ), Options_Framework::VERSION );
+		wp_enqueue_script( 'options-custom', WPR_OPTIONS_FRAMEWORK_DIRECTORY . 'js/options-custom.js', array( 'jquery','wp-color-picker' ), Wpr_Options_Framework::VERSION );
 
 		// Inline scripts from options-interface.php
 		add_action( 'admin_head', array( $this, 'wpr_of_admin_head' ) );
@@ -197,7 +197,7 @@ class Options_Framework_Admin {
 		<h2><?php echo esc_html( $menu['page_title'] ); ?></h2>
 
 	    <h2 class="nav-tab-wrapper">
-	        <?php echo Options_Framework_Interface::wpr_optionsframework_tabs(); ?>
+	        <?php echo Wpr_Options_Framework_Interface::wpr_optionsframework_tabs(); ?>
 	    </h2>
 
 	    <?php settings_errors( 'options-framework' ); ?>
@@ -206,7 +206,7 @@ class Options_Framework_Admin {
 		    <div id="wpr_optionsframework" class="postbox">
 				<form action="options.php" method="post">
 				<?php settings_fields( 'wpr_optionsframework' ); ?>
-				<?php Options_Framework_Interface::wpr_optionsframework_fields(); /* Settings */ ?>
+				<?php Wpr_Options_Framework_Interface::wpr_optionsframework_fields(); /* Settings */ ?>
 				<div id="wpr_optionsframework-submit">
 					<input type="submit" class="button-primary" name="update" value="<?php esc_attr_e( 'Save Options', 'textdomain' ); ?>" />
 					<input type="submit" class="reset-button button-secondary" name="reset" value="<?php esc_attr_e( 'Restore Defaults', 'textdomain' ); ?>" onclick="return confirm( '<?php print esc_js( __( 'Click OK to reset. Any theme settings will be lost!', 'textdomain' ) ); ?>' );" />
@@ -252,7 +252,7 @@ class Options_Framework_Admin {
 		 */
 
 		$clean = array();
-		$options = & Options_Framework::_wpr_optionsframework_options();
+		$options = & Wpr_Options_Framework::_wpr_optionsframework_options();
 		foreach ( $options as $option ) {
 
 			if ( ! isset( $option['id'] ) ) {
@@ -312,7 +312,7 @@ class Options_Framework_Admin {
 
 	function get_default_values() {
 		$output = array();
-		$config = & Options_Framework::_wpr_optionsframework_options();
+		$config = & Wpr_Options_Framework::_wpr_optionsframework_options();
 		foreach ( (array) $config as $option ) {
 			if ( ! isset( $option['id'] ) ) {
 				continue;

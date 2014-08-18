@@ -1,6 +1,6 @@
 <?php
 /**
- * @package   Options_Framework
+ * @package   Wpr_Options_Framework
  * @author    Devin Price <devin@wptheming.com>
  * @license   GPL-2.0+
  * @link      http://wptheming.com

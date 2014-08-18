@@ -22,15 +22,15 @@ function wpr_optionsframework_init() {
 	require plugin_dir_path( __FILE__ ) . 'includes/class-options-sanitization.php';
 
 	// Instantiate the main plugin class.
-	$options_framework = new Options_Framework;
+	$options_framework = new Wpr_Options_Framework;
 	$options_framework->init();
 
 	// Instantiate the options page.
-	$options_framework_admin = new Options_Framework_Admin;
-	$options_framework_admin->init();
+	$Wpr_Options_Framework_Admin = new Wpr_Options_Framework_Admin;
+	$Wpr_Options_Framework_Admin->init();
 
 	// Instantiate the media uploader class
-	$options_framework_media_uploader = new Options_Framework_Media_Uploader;
+	$options_framework_media_uploader = new Wpr_Options_Framework_Media_Uploader;
 	$options_framework_media_uploader->init();
 
 }

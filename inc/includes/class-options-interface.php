@@ -1,20 +1,20 @@
 <?php
 /**
- * @package   Options_Framework
+ * @package   Wpr_Options_Framework
  * @author    Devin Price <devin@wptheming.com>
  * @license   GPL-2.0+
  * @link      http://wptheming.com
  * @copyright 2010-2014 WP Theming
  */
 
-class Options_Framework_Interface {
+class Wpr_Options_Framework_Interface {
 
 	/**
 	 * Generates the tabs that are used in the options menu
 	 */
 	static function wpr_optionsframework_tabs() {
 		$counter = 0;
-		$options = & Options_Framework::_wpr_optionsframework_options();
+		$options = & Wpr_Options_Framework::_wpr_optionsframework_options();
 		$menu = '';
 
 		foreach ( $options as $value ) {
@@ -48,7 +48,7 @@ class Options_Framework_Interface {
 		};
 
 		$settings = get_option($option_name);
-		$options = & Options_Framework::_wpr_optionsframework_options();
+		$options = & Wpr_Options_Framework::_wpr_optionsframework_options();
 
 		$counter = 0;
 		$menu = '';
@@ -218,7 +218,7 @@ class Options_Framework_Interface {
 
 			// Uploader
 			case "upload":
-				$output .= Options_Framework_Media_Uploader::wpr_optionsframework_uploader( $value['id'], $val, null );
+				$output .= Wpr_Options_Framework_Media_Uploader::wpr_optionsframework_uploader( $value['id'], $val, null );
 
 				break;
 			//Number field
@@ -244,7 +244,7 @@ class Options_Framework_Interface {
 					$background['image'] = '';
 				}
 
-				$output .= Options_Framework_Media_Uploader::wpr_optionsframework_uploader( $value['id'], $background['image'], null, esc_attr( $option_name . '[' . $value['id'] . '][image]' ) );
+				$output .= Wpr_Options_Framework_Media_Uploader::wpr_optionsframework_uploader( $value['id'], $background['image'], null, esc_attr( $option_name . '[' . $value['id'] . '][image]' ) );
 
 				$class = 'of-background-properties';
 				if ( '' == $background['image'] ) {
@@ -351,7 +351,7 @@ class Options_Framework_Interface {
 		}
 
 		// Outputs closing div if there tabs
-		if ( Options_Framework_Interface::wpr_optionsframework_tabs() != '' ) {
+		if ( Wpr_Options_Framework_Interface::wpr_optionsframework_tabs() != '' ) {
 			echo '</div>';
 		}
 	}
