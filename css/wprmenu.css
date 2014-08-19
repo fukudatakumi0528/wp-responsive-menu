@@ -166,6 +166,7 @@ body { position: relative!important; }
 	width:100%;
 	display: none;
 	position: relative;
+	z-index: 9999;
 }
 #wprmenu_menu.left, #wprmenu_menu.right {
     display: none;
