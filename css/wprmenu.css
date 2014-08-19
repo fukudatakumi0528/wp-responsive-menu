@@ -178,21 +178,26 @@ body { position: relative!important; }
     overflow-y: auto;
     background: #2E2E2E;
 	top: 42px;
+	padding-bottom: 43px;
 }
 body.admin-bar #wprmenu_bar {
 	top:32px;
+	padding-bottom: 33px;
 }
 body.admin-bar #wprmenu_menu.left, 
 body.admin-bar #wprmenu_menu.right {
 	top: 74px;
+	padding-bottom: 75px;
 }
 @media only screen and (max-width: 782px) {
 	body.admin-bar #wprmenu_menu.left, 
 	body.admin-bar #wprmenu_menu.right {
 		top: 86px;
+		padding-bottom: 87px;
 	}
 	body.admin-bar #wprmenu_bar {
 		top:46px;
+		padding-bottom: 47px;
 	}
 }
 /*1st level*/
