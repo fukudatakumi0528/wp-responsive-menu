@@ -59,7 +59,8 @@ Check out [the demo](http://magnigenie.com/wp-responsive-menu-mobile-menu-plugin
 = Version 2.0.2 =
 
 * Fixed jquery sidr issue for the top menu.
-* Fixed menu scroll issue when there is more items inside menu. 
+* Fixed menu scroll issue when there is more items inside menu.
+* Fixed top menu z-index issue.
 
 = Version 2.0.1 =
 
