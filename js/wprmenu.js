@@ -96,8 +96,11 @@ jQuery(document).ready(function( $ ) {
 		//Additional fixes on change device orientation
 		if( $.browser.mozilla ) {
 			screen.addEventListener("orientationchange", function() {updateOrientation()}); //firefox
-		} else {
+		} else if( window.addEventListener ) {
 			window.addEventListener('orientationchange', updateOrientation, false);
+		}
+		else {
+			window.attachEvent( "orientationchange" );
 		}
 		function updateOrientation() {
 			window.scrollBy(1,1);
