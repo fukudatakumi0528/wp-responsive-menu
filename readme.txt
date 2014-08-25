@@ -3,7 +3,7 @@ Contributors: sagarseth9,magnigenie
 Tags: Wordpress Responsive Menu, Genesis responsive menu, Genesis Mobile Menu, Thesis Mobile Menu, Thesis Responsive Menu,  Mobile Menu, Responsive Menu Plugin, WP Responsive Menu, Wordpress mobile menu
 Requires at least: 3.4
 Tested up to: 3.9.2
-Stable tag: 2.0.4
+Stable tag: 2.0.5
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=sagar.seth9@gmail.com&item_name=WP%20Responsive%20Menu&return=http://magnigenie.com
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -55,6 +55,10 @@ Check out [the demo](http://magnigenie.com/wp-responsive-menu-mobile-menu-plugin
 
 == ChangeLog ==
 
+= Version 2.0.5 =
+
+* Updated google font loading method so that it would adapt to the protocol of the website.
+
 = Version 2.0.4 =
 
 * Fixed browser javascript issue for lower versions of IE.
@@ -87,6 +91,6 @@ Check out [the demo](http://magnigenie.com/wp-responsive-menu-mobile-menu-plugin
 
 == Upgrade Notice ==
 
-= Version 2.0.4 =
+= Version 2.0.5 =
 
 * As I have updated the plugin options panel so there might be few settings problems. If you are having any such problem try to check the plugin settings and configure it accordingly.
